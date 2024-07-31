@@ -9,7 +9,6 @@ mongoose.connect(mongoDBURL)
 // Mongoose maintains a default connection object representation the MongoDB connection.
 const db = mongoose.connection;
 
-
 // Define event listener for database connection
 db.on('connected', () => {
   console.log('connnected to mongodb');
