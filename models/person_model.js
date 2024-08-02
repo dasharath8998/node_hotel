@@ -30,6 +30,14 @@ const personSchema = mongoose.Schema({
   salary: {
     type: Number,
     required: true,
+  },
+  username: {
+    type: String,
+    required: true
+  },
+  password: {
+    type: String,
+    required: true
   }
 })
 

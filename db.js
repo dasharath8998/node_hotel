@@ -4,7 +4,7 @@ require('dotenv').config()
 // Live Url
 const LIVE_URL = process.env.MONGO_LIVE_URL
 const LOCALHOST_URL = process.env.MONGO_LOCAL_URL
-const mongoLiveUrl = LIVE_URL
+const mongoLiveUrl = LOCALHOST_URL
 // Define the mongo db connection URL
 // const mongoDBURL = LOCALHOST_URL
 
