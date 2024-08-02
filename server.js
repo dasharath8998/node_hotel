@@ -21,8 +21,8 @@ const menuRoutes = require('./routes/menu_route')
 
 app.get('/' ,(req, res) => res.send('Welcome to the Hotel DS'))
 
-app.use('/person', auth.authValidator, personRoute)
-app.use('/menu', menuRoutes)
+app.use('/person', personRoute)
+app.use('/menu', auth.authValidator, menuRoutes)
 
 const PORT = process.env.PORT || 3000
 
